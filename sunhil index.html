@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunhil City - Premium Plots Near Jewar Airport</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') center/cover;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .hero h1 {
+      font-size: 48px;
+    }
+    .hero p {
+      font-size: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+    .content {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .content h2 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .features {
+      list-style: none;
+      padding: 0;
+    }
+    .features li {
+      padding: 10px 0;
+      border-bottom: 1px solid #eee;
+    }
+    form {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+    }
+    input, textarea {
+      margin-bottom: 15px;
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      padding: 14px;
+      background-color: #ff6600;
+      color: white;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .contact-options {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .contact-options a {
+      margin: 0 10px;
+      font-size: 18px;
+      color: #fff;
+      background: #25D366;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      animation: blink 1.2s infinite;
+    }
+    .call-button {
+      background: #007bff;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: white;
+    }
+    .after-submit {
+      display: none;
+      margin-top: 20px;
+      text-align: center;
+    }
+    .after-submit.show {
+      display: block;
+    }
+    @keyframes blink {
+      0%, 50%, 100% { opacity: 1; }
+      25%, 75% { opacity: 0.4; }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <h1>Sunhil City - Live Where Your Heart Belongs</h1>
+    <p>Premium residential plots just minutes from Jewar Airport, Yamuna Expressway, and upcoming Film City. Safe. Smart. Strategic.</p>
+  </div>
+
+  <div class="content">
+    <h2>Why Choose Sunhil City?</h2>
+    <ul class="features">
+      <li>✅ Located near Jewar Airport, Yamuna Expressway & Film City</li>
+      <li>✅ Fully approved township with instant registry & mutation</li>
+      <li>✅ Plots starting at just ₹24,999/sq. yd</li>
+      <li>✅ High Return on Investment</li>
+      <li>✅ Safe & secure gated community</li>
+      <li>✅ Limited inventory – Book before it's gone!</li>
+    </ul>
+
+    <form id="inquiryForm" action="https://formsubmit.co/infosbinfraa@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="tel" name="phone" placeholder="Your Phone Number" required>
+      <textarea name="message" placeholder="Your Message or Query" rows="4"></textarea>
+      <button type="submit">Submit Inquiry</button>
+      <input type="hidden" name="_captcha" value="false">
+    </form>
+
+    <div class="after-submit" id="afterSubmit">
+      <p>✅ Thank you! Your inquiry has been submitted.</p>
+      <div class="contact-options">
+        <a href="tel:+919211296633" class="call-button">📞 Call Us: +91 92112 96633</a>
+        <a href="https://wa.me/919211296633" target="_blank">💬 WhatsApp Us</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Sunhil City. Developed by Sunhil Groups.
+  </footer>
+
+  <script>
+    const form = document.getElementById('inquiryForm');
+    const afterSubmit = document.getElementById('afterSubmit');
+    form.addEventListener('submit', function(e) {
+      setTimeout(() => {
+        form.style.display = 'none';
+        afterSubmit.classList.add('show');
+      }, 1000);
+    });
+  </script>
+</body>
+</html>
